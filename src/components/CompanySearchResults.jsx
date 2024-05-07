@@ -47,7 +47,7 @@ const CompanySearchResults = () => {
     <Container>
       <Row>
         {loading && (
-          <Col className="my-3">
+          <Col className="my-3 text-center">
             <Spinner animation="border" variant="primary" />
           </Col>
         )}

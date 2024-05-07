@@ -82,6 +82,7 @@ export const handleSubmitAction = (e, baseEndpoint, query) => {
 export const getJobsFromCompany = (baseEndpoint, params) => {
   return async (dispatch, getState) => {
     try {
+      dispatch(setLoadingOn());
       const response = await fetch(baseEndpoint + params.company);
       if (response.ok) {
         const { data } = await response.json();
