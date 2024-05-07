@@ -2,6 +2,9 @@ import { JOBS_FOR_COMPANY, SET_IS_LOADING_0FF, SET_IS_LOADING_ON, SET_ERROR_ON, 
 
 const initialState = {
     content: [],
+    isLoading: false,
+    hasError: false,
+    errorMessage: "",
 }
 
 const jobsForCompanyReducer = (state = initialState, action) => {
